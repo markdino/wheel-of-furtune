@@ -1,0 +1,122 @@
+[
+    {
+        "value": 1,
+        "width": 5,
+        "color": "#aa00ff"
+    },
+    {
+        "value": 20,
+        "width": 4,
+        "color": "#01579b"
+    },
+    {
+        "value": 30,
+        "width": 3,
+        "color": "#3AB745"
+    },
+    {
+        "value": 1,
+        "width": 5,
+        "color": "#aa00ff"
+    },
+    {
+        "value": 40,
+        "width": 3,
+        "color": "#FB9A00"
+    },
+    {
+        "value": 20,
+        "width": 4,
+        "color": "#01579b"
+    },
+    {
+        "value": 100,
+        "width": 2,
+        "color": "#33691e"
+    },
+    {
+        "value": 50,
+        "width": 3,
+        "color": "#CC0071"
+    },
+    {
+        "value": 1,
+        "width": 5,
+        "color": "#aa00ff"
+    },
+    {
+        "value": 30,
+        "width": 3,
+        "color": "#3AB745"
+    },
+    {
+        "value": 20,
+        "width": 4,
+        "color": "#01579b"
+    },
+    {
+        "value": 40,
+        "width": 3,
+        "color": "#FB9A00"
+    },
+    {
+        "value": 30,
+        "width": 3,
+        "color": "#3AB745"
+    },
+    {
+        "value": 50,
+        "width": 3,
+        "color": "#CC0071"
+    },
+    {
+        "value": 1,
+        "width": 5,
+        "color": "#aa00ff"
+    },
+    {
+        "value": 40,
+        "width": 3,
+        "color": "#FB9A00"
+    },
+    {
+        "value": 30,
+        "width": 3,
+        "color": "#3AB745"
+    },
+    {
+        "value": 20,
+        "width": 4,
+        "color": "#01579b"
+    },
+    {
+        "value": 50,
+        "width": 3,
+        "color": "#CC0071"
+    },
+    {
+        "value": 100,
+        "width": 2,
+        "color": "#33691e"
+    },
+    {
+        "value": "Bankrupt",
+        "width": 5,
+        "color": "#d50000"
+    },
+    {
+        "value": "Jackpot",
+        "width": 1,
+        "color": "#FFD700"
+    },
+    {
+        "value": "Bankrupt",
+        "width": 5,
+        "color": "#d50000"
+    },
+    {
+        "value": 300,
+        "width": 2,
+        "color": "#4a148c"
+    }
+]
