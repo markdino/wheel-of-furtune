@@ -13,14 +13,14 @@ const Legends = () => {
 
   return (
     <Stack direction="row" justifyContent="space-between"  sx={{ py: 2}}>
-      {items.map((item) => {
+      {items.map((item, index) => {
         const content =
           item.value === "Bankrupt" ? (
-            <img src={skull} alt='skull' />
+            <img src={skull} alt='skull' key={index} />
           ) : item.value === "Jackpot" ? (
-            <img src={gift} alt='gift' />
+            <img src={gift} alt='gift' key={index} />
           ) : (
-            <Typography variant="h5" sx={{color: '#fff', fontWeight: '700'}}>{item.value}</Typography>
+            <Typography variant="h5" sx={{color: '#fff', fontWeight: '700'}} key={index}>{item.value}</Typography>
           );
         return (
           <CirclePlate elevation={3} bgcolor={item.color} size='45px' key={item.value}>

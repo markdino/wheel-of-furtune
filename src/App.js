@@ -50,8 +50,8 @@ function App() {
                           >{`Player: ${participants.player?.name}`}</PlayerTitle>
                           <Typography>Prizes: </Typography>
                           <ol>
-                            {participants.player.prizes.map((prize) => (
-                              <li>
+                            {participants.player.prizes.map((prize,index) => (
+                              <li key={index}>
                                 <strong>
                                   {typeof prize === "number"
                                     ? `Php ${prize}.00`
