@@ -6,6 +6,8 @@ import styled from "styled-components";
 import wheelBorder from '../assets/Img/wheelborder.png'
 import RotateRightIcon from '@mui/icons-material/RotateRight';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import RestoreIcon from '@mui/icons-material/Restore';
+import PublishedWithChangesIcon from '@mui/icons-material/PublishedWithChanges';
 import { LoadingButton } from "@mui/lab";
 
 const Canvas = styled('canvas')(({ bg })=>({
@@ -165,7 +167,7 @@ const RouletteWheel = ({ width = 500, height = 500 }) => {
         ref={canvasRef}
         bg={wheelBorder}
       ></Canvas>
-      <Stack direction="row" spacing={2} justifyContent="stretch">
+      <Stack direction="row" spacing={2} justifyContent="stretch" sx={{ mb: 2}}>
         <Button
           color="warning"
           variant="contained"
@@ -190,6 +192,30 @@ const RouletteWheel = ({ width = 500, height = 500 }) => {
         >
           Spin
         </LoadingButton>
+      </Stack>
+      <Stack direction="row" spacing={2} justifyContent="stretch">
+        <Button
+          color="error"
+          variant="contained"
+          size="large"
+          sx={{ width: "100%" }}
+          onClick={participants.resetParticipantsPrizes}
+          disabled={!participants.checkHasPrizes()}
+          startIcon={<PublishedWithChangesIcon />}
+        >
+          End Round
+        </Button>
+        <Button
+          color="warning"
+          variant="contained"
+          size="large"
+          sx={{ width: "100%" }}
+          // onClick={}
+          disabled={!participants.all?.hasOwnProperty('hasJackpot')}
+          startIcon={<RestoreIcon />}
+        >
+          Restore Jackpot
+        </Button>
       </Stack>
     </Stack>
   );

@@ -11,6 +11,8 @@ const ParticipantContext = createContext({
   player: {},
   addPlayerPrize: () => {},
   resetPlayerPrize: () => {},
+  checkHasPrizes: () => {},
+  resetParticipantsPrizes: () => {},
 })
 
 export const ParticipantContextProvider = ({ children }) => {
@@ -74,6 +76,21 @@ export const ParticipantContextProvider = ({ children }) => {
     updateParticipant(playerIndex, updatedPlayer)
   }
 
+  const checkHasPrizes = () => {
+    let hasPrize = false
+    participants.forEach(participant =>{
+      if(participant.prizes?.length > 0) {
+        hasPrize = true
+      }
+    })
+    return hasPrize
+  }
+
+  const resetParticipantsPrizes = () => {
+    const updatedPlayer = participants.map(participant=>({...participant, prizes: []}))
+    setParticipants(updatedPlayer)
+  }
+
   const context = {
     all: participants,
     add: addParticipant,
@@ -84,6 +101,8 @@ export const ParticipantContextProvider = ({ children }) => {
     selectPlayer,
     addPlayerPrize,
     resetPlayerPrize,
+    checkHasPrizes,
+    resetParticipantsPrizes,
   }
 
   return (
