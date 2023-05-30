@@ -33,6 +33,17 @@ const RouletteWheel = ({ width = 500, height = 500 }) => {
     setPrizes(data)
   }
 
+  const jackpotIsTaken = () => {
+    let taken = false
+    prizes.forEach(prize => {
+      if (prize.value === 'Jackpot') {
+        taken = true
+      }
+    })
+
+    return taken
+  }
+
   const participants = useContext(ParticipantContext);
   const canvasRef = useRef(null);
 
@@ -211,7 +222,7 @@ const RouletteWheel = ({ width = 500, height = 500 }) => {
           size="large"
           sx={{ width: "100%" }}
           onClick={loadPrizes}
-          disabled={!participants.all?.hasOwnProperty('hasJackpot')}
+          disabled={!jackpotIsTaken()}
           startIcon={<RestoreIcon />}
         >
           Restore Roulette
