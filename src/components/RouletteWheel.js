@@ -34,10 +34,10 @@ const RouletteWheel = ({ width = 500, height = 500 }) => {
   }
 
   const jackpotIsTaken = () => {
-    let taken = false
+    let taken = true
     prizes.forEach(prize => {
       if (prize.value === 'Jackpot') {
-        taken = true
+        taken = false
       }
     })
 
