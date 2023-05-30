@@ -206,7 +206,7 @@ const RouletteWheel = ({ width = 500, height = 500 }) => {
           End Round
         </Button>
         <Button
-          color="warning"
+          color="secondary"
           variant="contained"
           size="large"
           sx={{ width: "100%" }}
@@ -214,7 +214,7 @@ const RouletteWheel = ({ width = 500, height = 500 }) => {
           disabled={!participants.all?.hasOwnProperty('hasJackpot')}
           startIcon={<RestoreIcon />}
         >
-          Restore Prizes
+          Restore Roulette
         </Button>
       </Stack>
     </Stack>
