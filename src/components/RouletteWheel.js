@@ -210,7 +210,7 @@ const RouletteWheel = ({ width = 500, height = 500 }) => {
           variant="contained"
           size="large"
           sx={{ width: "100%" }}
-          // onClick={}
+          onClick={loadPrizes}
           disabled={!participants.all?.hasOwnProperty('hasJackpot')}
           startIcon={<RestoreIcon />}
         >
