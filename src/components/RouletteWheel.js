@@ -214,7 +214,7 @@ const RouletteWheel = ({ width = 500, height = 500 }) => {
           disabled={!participants.all?.hasOwnProperty('hasJackpot')}
           startIcon={<RestoreIcon />}
         >
-          Restore Jackpot
+          Restore Prizes
         </Button>
       </Stack>
     </Stack>
