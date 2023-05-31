@@ -87,7 +87,7 @@ export const ParticipantContextProvider = ({ children }) => {
   }
 
   const resetParticipantsPrizes = () => {
-    const updatedPlayer = participants.map(participant=>({...participant, prizes: []}))
+    const updatedPlayer = participants.map(participant=>({...participant, prizes: [], hasJackpot: false}))
     setParticipants(updatedPlayer)
   }
 
